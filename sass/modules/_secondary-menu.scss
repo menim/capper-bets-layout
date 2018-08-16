@@ -1,0 +1,18 @@
+.secondary-menu {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.secondary-menu--item {
+  color: $sapling;
+  margin-left: 27px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $vida-loca;
+  }
+}

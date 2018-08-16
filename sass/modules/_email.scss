@@ -1,0 +1,25 @@
+.email {
+  color: $peat;
+  font-size: 15px;
+  text-decoration: none;
+
+  &::before {
+    background-image: url('../images/spritesheet.png');
+    background-position: -126px -5px;
+    content: '';
+    display: block;
+    height: 13px;
+    left: -22px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+  }
+}
+
+.email-header {
+  align-self: flex-end;
+  margin-bottom: 19px;
+  margin-left: auto;
+  position: relative;
+}
+

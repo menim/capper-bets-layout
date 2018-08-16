@@ -1,0 +1,16 @@
+.leagues-list--item {
+  border-bottom: 1px dashed $delta;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.leagues-list--link {
+  color: $vida-loca;
+  display: flex;
+  font: italic 13px arimo, sans-serif;
+  justify-content: space-between;
+}
+
+.leagues-list--quantity {
+  align-self: flex-end;
+}

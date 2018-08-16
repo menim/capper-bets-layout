@@ -1,0 +1,26 @@
+.l-wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 80px 11.2% 0;
+  position: relative;
+}
+
+.l-flex {
+  display: flex;
+}
+
+.l-left-offset {
+  margin-left: 22px;
+}
+
+.l-space-between {
+  justify-content: space-between;
+}
+
+.l-wrap {
+  flex-wrap: wrap;
+}
+
+.l-gorizontal-end {
+  justify-content: flex-end;
+}

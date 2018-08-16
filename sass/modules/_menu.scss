@@ -1,0 +1,24 @@
+.menu {
+  height: 70px;
+}
+
+.menu--item {
+  cursor: pointer;
+  padding: 0 23px;
+
+  &:hover {
+    background-color: $sapling-op-05;
+  }
+}
+
+.menu--link {
+  align-items: center;
+  color: $sapling;
+  display: flex;
+  font-size: 15px;
+  height: 100%;
+}
+
+.menu--item-active {
+  border-bottom: 6px solid $vida-loca;
+}

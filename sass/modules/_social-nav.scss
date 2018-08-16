@@ -1,0 +1,72 @@
+.social-nav {
+  display: flex;
+}
+
+.social-nav--item {
+  background-image: url('../images/spritesheet.png');
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social-nav--vk {
+  background-position: -154px -5px;
+  height: 37px;
+  width: 37px;
+
+  &:hover {
+    background-position: -149px -52px;
+    height: 37px;
+    width: 37px;
+  }
+}
+
+.social-nav--classmates {
+  background-position: -101px -52px;
+  height: 37px;
+  width: 38px;
+
+  &:hover {
+    background-position: -5px -99px;
+    height: 37px;
+    width: 38px;
+  }
+}
+
+.social-nav--facebook {
+  background-position: -30px -5px;
+  height: 37px;
+  width: 38px;
+
+  &:hover {
+    background-position: -78px -5px;
+    height: 37px;
+    width: 38px;
+  }
+}
+
+.social-nav--twitter {
+  background-position: -53px -99px;
+  height: 37px;
+  width: 38px;
+
+  &:hover {
+    background-position: -101px -99px;
+    height: 37px;
+    width: 38px;
+  }
+}
+
+.social-nav--googleplus {
+  background-position: -5px -52px;
+  height: 37px;
+  width: 38px;
+
+  &:hover {
+    background-position: -53px -52px;
+    height: 37px;
+    width: 38px;
+  }
+}

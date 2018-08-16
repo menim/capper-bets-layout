@@ -1,0 +1,18 @@
+.table {
+  color: $heavy-metal;
+  font-size: 13px;
+  margin-top: 87px;
+  width: 100%;
+}
+
+.table--last {
+  margin-bottom: 80px;
+}
+
+.table--row {
+  height: 50px;
+
+  &:nth-child(even) {
+    background-color: $ercu-white;
+  }
+}

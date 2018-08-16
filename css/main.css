@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "arimo";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/arimo-bolditalic.woff2") format("woff2"), url("fonts/arimo-bolditalic.woff") format("woff"), url("fonts/arimo-bolditalic.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "arimo";
+  src: url("fonts/arimo-regular.woff2") format("woff2"), url("fonts/arimo-regular.woff") format("woff"), url("fonts/arimo-regular.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "arimo";
+  font-style: italic;
+  src: url("fonts/arimo-italic.woff2") format("woff2"), url("fonts/arimo-italic.woff") format("woff"), url("fonts/arimo-italic.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "arimo";
+  font-weight: bold;
+  src: url("fonts/arimo-bold.woff2") format("woff2"), url("fonts/arimo-bold.woff") format("woff"), url("fonts/arimo-bold.ttf") format("truetype");
+  font-display: swap; }
+
+body {
+  font: 16px Arimo, Arial, sans-serif;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  padding: 0; }
+
+caption {
+  text-align: left; }
+
+th {
+  color: #757675;
+  font: italic 13px arimo, sans-serif; }
+
+td {
+  text-align: center; }
+
+.l-wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 80px 11.2% 0;
+  position: relative; }
+
+.l-flex {
+  display: flex; }
+
+.l-left-offset {
+  margin-left: 22px; }
+
+.l-space-between {
+  justify-content: space-between; }
+
+.l-wrap {
+  flex-wrap: wrap; }
+
+.l-gorizontal-end {
+  justify-content: flex-end; }
+
+#header {
+  background: url("../images/header-bg.jpg") no-repeat #000;
+  background-size: cover;
+  height: 300px;
+  width: 100%; }
+  #header .l-line {
+    border-top: 1px solid rgba(223, 215, 167, 0.15); }
+  #header .l-top-offset {
+    margin-top: 8px; }
+
+#main .l-offset-bottom {
+  margin-bottom: 50px; }
+
+#aside {
+  flex: 0 1 18.868%;
+  margin-right: 4.717%; }
+
+#content {
+  flex: 0 1 76.415%; }
+
+#footer {
+  background-color: #212924;
+  height: 233px;
+  margin-top: 100px; }
+  #footer .l-offset-bottom {
+    margin-bottom: 44px; }
+
+.email {
+  color: #6d6a54;
+  font-size: 15px;
+  text-decoration: none; }
+  .email::before {
+    background-image: url("../images/spritesheet.png");
+    background-position: -126px -5px;
+    content: '';
+    display: block;
+    height: 13px;
+    left: -22px;
+    position: absolute;
+    top: 3px;
+    width: 18px; }
+
+.email-header {
+  align-self: flex-end;
+  margin-bottom: 19px;
+  margin-left: auto;
+  position: relative; }
+
+.menu {
+  height: 70px; }
+
+.menu--item {
+  cursor: pointer;
+  padding: 0 23px; }
+  .menu--item:hover {
+    background-color: rgba(223, 215, 167, 0.05); }
+
+.menu--link {
+  align-items: center;
+  color: #dfd7a7;
+  display: flex;
+  font-size: 15px;
+  height: 100%; }
+
+.menu--item-active {
+  border-bottom: 6px solid #5b8a16; }
+
+.login {
+  font-size: 14px; }
+
+.login-nav {
+  align-self: center;
+  margin-left: auto; }
+
+.headline {
+  color: #212924;
+  font-family: arimo, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.headline--primary {
+  font-size: 25px; }
+
+.headline--secondary {
+  font-size: 17px; }
+
+.primary-link {
+  color: #5b8a16;
+  font: italic 15px arimo, sans-serif; }
+
+.primary-paragraph {
+  color: #212924;
+  font: normal 15px/2 arimo, sans-serif; }
+
+.leagues-list--item {
+  border-bottom: 1px dashed #acada9;
+  padding-bottom: 18px;
+  margin-bottom: 20px; }
+
+.leagues-list--link {
+  color: #5b8a16;
+  display: flex;
+  font: italic 13px arimo, sans-serif;
+  justify-content: space-between; }
+
+.leagues-list--quantity {
+  align-self: flex-end; }
+
+.table {
+  color: #212924;
+  font-size: 13px;
+  margin-top: 87px;
+  width: 100%; }
+
+.table--last {
+  margin-bottom: 80px; }
+
+.table--row {
+  height: 50px; }
+  .table--row:nth-child(even) {
+    background-color: #f2efdc; }
+
+.article {
+  align-items: flex-start;
+  color: #212924;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 15px; }
+  .article:first-child {
+    padding-top: 0; }
+  .article:last-child {
+    margin-bottom: 61px; }
+
+.article--excerpt {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 auto 0 10px; }
+
+.article--headline {
+  font-size: 15px;
+  font-style: italic; }
+
+.article--date {
+  font-size: 13px;
+  font-style: italic; }
+
+.articles--headline {
+  margin-bottom: 23px; }
+
+.social-nav {
+  display: flex; }
+
+.social-nav--item {
+  background-image: url("../images/spritesheet.png");
+  margin-left: 15px; }
+  .social-nav--item:first-child {
+    margin-left: 0; }
+
+.social-nav--vk {
+  background-position: -154px -5px;
+  height: 37px;
+  width: 37px; }
+  .social-nav--vk:hover {
+    background-position: -149px -52px;
+    height: 37px;
+    width: 37px; }
+
+.social-nav--classmates {
+  background-position: -101px -52px;
+  height: 37px;
+  width: 38px; }
+  .social-nav--classmates:hover {
+    background-position: -5px -99px;
+    height: 37px;
+    width: 38px; }
+
+.social-nav--facebook {
+  background-position: -30px -5px;
+  height: 37px;
+  width: 38px; }
+  .social-nav--facebook:hover {
+    background-position: -78px -5px;
+    height: 37px;
+    width: 38px; }
+
+.social-nav--twitter {
+  background-position: -53px -99px;
+  height: 37px;
+  width: 38px; }
+  .social-nav--twitter:hover {
+    background-position: -101px -99px;
+    height: 37px;
+    width: 38px; }
+
+.social-nav--googleplus {
+  background-position: -5px -52px;
+  height: 37px;
+  width: 38px; }
+  .social-nav--googleplus:hover {
+    background-position: -53px -52px;
+    height: 37px;
+    width: 38px; }
+
+.copyright {
+  color: #dfd7a7;
+  font-size: 12px;
+  align-self: flex-end; }
+
+.secondary-menu {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.secondary-menu--item {
+  color: #dfd7a7;
+  margin-left: 27px; }
+  .secondary-menu--item:first-child {
+    margin-left: 0; }
+  .secondary-menu--item:hover {
+    color: #5b8a16; }

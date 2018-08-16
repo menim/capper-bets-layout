@@ -1,0 +1,35 @@
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+
+body {
+  font: 16px Arimo, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+th {
+  color: $xanadu;
+  font: italic 13px arimo, sans-serif;
+}
+
+td {
+  text-align: center;
+}

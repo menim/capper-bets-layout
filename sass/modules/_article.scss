@@ -1,0 +1,35 @@
+.article {
+  align-items: flex-start;
+  color: $heavy-metal;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 15px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 61px;
+  }
+}
+
+.article--excerpt {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 auto 0 10px;
+}
+
+.article--headline {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.article--date {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.articles--headline {
+  margin-bottom: 23px;
+}

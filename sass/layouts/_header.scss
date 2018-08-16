@@ -1,0 +1,14 @@
+#header {
+  background: url('../images/header-bg.jpg') no-repeat $black;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+
+  .l-line {
+    border-top: 1px solid $sapling-op-15;
+  }
+
+  .l-top-offset {
+    margin-top: 8px;
+  }
+}
