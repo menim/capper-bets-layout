@@ -2,24 +2,24 @@
   font-family: "arimo";
   font-style: italic;
   font-weight: bold;
-  src: url("fonts/arimo-bolditalic.woff2") format("woff2"), url("fonts/arimo-bolditalic.woff") format("woff"), url("fonts/arimo-bolditalic.ttf") format("truetype");
+  src: url("../fonts/arimo-bolditalic.woff2") format("woff2"), url("../fonts/arimo-bolditalic.woff") format("woff"), url("../fonts/arimo-bolditalic.ttf") format("truetype");
   font-display: swap; }
 
 @font-face {
   font-family: "arimo";
-  src: url("fonts/arimo-regular.woff2") format("woff2"), url("fonts/arimo-regular.woff") format("woff"), url("fonts/arimo-regular.ttf") format("truetype");
+  src: url("../fonts/arimo-regular.woff2") format("woff2"), url("../fonts/arimo-regular.woff") format("woff"), url("../fonts/arimo-regular.ttf") format("truetype");
   font-display: swap; }
 
 @font-face {
   font-family: "arimo";
   font-style: italic;
-  src: url("fonts/arimo-italic.woff2") format("woff2"), url("fonts/arimo-italic.woff") format("woff"), url("fonts/arimo-italic.ttf") format("truetype");
+  src: url("../fonts/arimo-italic.woff2") format("woff2"), url("../fonts/arimo-italic.woff") format("woff"), url("../fonts/arimo-italic.ttf") format("truetype");
   font-display: swap; }
 
 @font-face {
   font-family: "arimo";
   font-weight: bold;
-  src: url("fonts/arimo-bold.woff2") format("woff2"), url("fonts/arimo-bold.woff") format("woff"), url("fonts/arimo-bold.ttf") format("truetype");
+  src: url("../fonts/arimo-bold.woff2") format("woff2"), url("../fonts/arimo-bold.woff") format("woff"), url("../fonts/arimo-bold.ttf") format("truetype");
   font-display: swap; }
 
 body {
@@ -50,6 +50,7 @@ td {
 .l-wrapper {
   margin: 0 auto;
   max-width: 1366px;
+  min-width: 320px;
   padding: 80px 11.2% 0;
   position: relative; }
 
@@ -80,6 +81,9 @@ td {
 
 #main .l-offset-bottom {
   margin-bottom: 50px; }
+
+#main .l-offset-top {
+  margin-top: 87px; }
 
 #aside {
   flex: 0 1 18.868%;
@@ -180,7 +184,6 @@ td {
 .table {
   color: #212924;
   font-size: 13px;
-  margin-top: 87px;
   width: 100%; }
 
 .table--last {
@@ -289,3 +292,25 @@ td {
     margin-left: 0; }
   .secondary-menu--item:hover {
     color: #5b8a16; }
+
+.match-preview--commands {
+  display: flex; }
+
+.match-preview--command {
+  align-self: center; }
+
+.match-preview--description {
+  margin: 0 48px;
+  text-align: center; }
+
+.stats-list {
+  padding-bottom: 1px; }
+
+.stats-list--item {
+  color: #96958e;
+  font-style: italic;
+  margin-bottom: 21px; }
+
+.stats-list--data {
+  color: #212924;
+  font-style: normal; }
