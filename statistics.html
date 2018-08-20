@@ -6,10 +6,10 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Cappers</title>
+      <title>Статистика</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' href="css/main.css">
+  <link rel='stylesheet' href="css/main.css">   
       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   </head>
   <body>
@@ -24,9 +24,9 @@
         </div>
         <nav class="l-flex l-line l-top-offset l-space-between">
           <ul class="menu l-flex">
-            <li class="menu--item menu--item-active"><a class="menu--link" href="index.html">Главная</a></li>
+            <li class="menu--item"><a class="menu--link" href="index.html">Главная</a></li>
             <li class="menu--item"><a class="menu--link" href="">О системе</a></li>
-            <li class="menu--item"><a class="menu--link" href="statistics.html">Статистика</a></li>
+            <li class="menu--item menu--item-active"><a class="menu--link" href="statistics.html">Статистика</a></li>
             <li class="menu--item"><a class="menu--link" href="">Статьи</a></li>
             <li class="menu--item"><a class="menu--link" href="">Контакты</a></li>
           </ul>
@@ -86,35 +86,110 @@
         </nav>
       </aside>
       <div id="content">
-        <section class="match-preview">
-          <h2 class="headline headline--primary l-offset-bottom">Прогноз матча Кан - Нант (Франция)</h2>
-          <div class="match-preview--commands">
-            <img class="match-preview--command" src="images/forecast_logo-comand1.jpg" alt="" />
-            <div class="match-preview--description">
-              <h3 class="headline headline--primary">Кан - Нант</h3>
-              <h4>Чемпионат франции</h4>
-              <img src="images/forecast_ligue-logo.png" alt="" />
-            </div>
-            <img class="match-preview--command" src="images/forecast_logo-comand2.jpg" alt="" />
-          </div>
-          <ul class="stats-list l-offset-top">
-            <li class="stats-list--item">Дата матча: <span class="stats-list--data">23.10.2015</span></li>
-            <li class="stats-list--item">Время матча (Киев):<span class="stats-list--data">19:30</span></li>
-            <li class="stats-list--item"> Прогноз матча: <span class="stats-list--data">Х2</span></li>
-            <li class="stats-list--item">Тип прогноза:<span class="stats-list--data"> Простой</span></li>
+        <h2 class="headline headline--primary l-offset-bottom">Статистика</h2>
+        <div class="calendar l-offset-left l-offset-sm-bottom">
+          <ul class="calendar--list">
+            <li class="calendar--item">2016</li>
+            <li class="calendar--item">2017</li>
+            <li class="calendar--item">2018</li>
           </ul>
-        </section>
-        <p class="primary-paragraph">
-          Решил все же черкнуть пару строк почему я так думаю. Все сразу писал на чистовую, посему пардон 
-          за мой безграмотный в некоторых случаях словооборот и синтаксис. Ну во первых я перестал операться 
-          в прогнозах на то что у кого -то состав лучше, у кого-то состав хуже. Иногда игрок замены в конкретной 
-          игре действует в разы лучше, чем игрок основы. В этой игре для меня главный аргумент это конечно 
-          же беспроигрышная серия Кана. Увы и ах, все проще простого, одни играют на контратаках, сейчас 
-          имею ввиду Кан, Нант тоже думаю не будет сильно лезть вперед, но опять же  это все такого рода п
-          редположения, которые невозможно предсказать в связи с человеческим фактором, а как известно в футбол 
-          играют люди. Ну и как всем известно, у кана еще нет ничейных исходов за этот чемпионат, жду. Всем хорошего 
-          вечера и удачных ставок.
-        </p>
+          <button class="calendar--prev-btn"></button>
+          <button class="calendar--next-btn"></button>
+        </div><br />
+        <div class="calendar l-offset-left">
+          <ul class="calendar--list">
+            <li class="calendar--item">Май</li>
+            <li class="calendar--item">Июнь</li>
+            <li class="calendar--item">Июль</li>
+            <li class="calendar--item"><span class="calendar--active">Август</span></li>
+            <li class="calendar--item">Сентябрь</li>
+            <li class="calendar--item">Октябрь</li>
+            <li class="calendar--item">Ноябрь</li>
+            <li class="calendar--item">Декабрь</li>
+          </ul>
+          <button class="calendar--prev-btn"></button>
+          <button class="calendar--next-btn"></button>
+        </div>
+        <table cellspacing="0" class="table l-offset-top">
+          <caption class="headline headline--secondary">Наши последние 10 прогнозов</caption>
+          <tr class="table--row">
+            <th>Дата</th>
+            <th>Лига</th>
+            <th>Команды</th>
+            <th>Коэфф.</th>
+            <th>Прогноз</th>
+            <th>Счет</th>
+            <th>Результат</th>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+          <tr class="table--row">
+            <td>25.10.15</td>
+            <td>Серия А, Италия</td>
+            <td><a href=""><strong>Эмполи</strong> VS <strong>Ювентус</strong></a></td>
+            <td><strong>1.75</strong></td>
+            <td><strong>Ф2(+1)</strong></td>
+            <td>2:1</td>
+            <td>Возврат</td>
+          </tr>
+        </table>
+        <ul class="stats-list">
+          <li class="stats-list--item stats-list--item__bold">Возврат:<span class="stats-list--data">4</span></li>
+          <li class="stats-list--item stats-list--item__bold">Победа:<span class="stats-list--data">8</span></li>
+          <li class="stats-list--item stats-list--item__bold">Поражение:<span class="stats-list--data">4</span></li>
+        </ul>
         <section class="articles l-offset-top">
           <h2 class="headline headline--primary articles--headline">Последние статьи</h2>
           <article class="article">
@@ -166,4 +241,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
   </body>
-</html>    
+</html>
