@@ -1,8 +1,5 @@
 .article {
-  align-items: flex-start;
   color: $heavy-metal;
-  justify-content: space-between;
-  display: flex;
   margin-bottom: 15px;
 
   &:first-child {
@@ -10,24 +7,67 @@
   }
 
   &:last-child {
+    border: 0;
     margin-bottom: 61px;
+    padding-bottom: 0;
   }
+
+  &__with-border {
+    border-bottom: 1px dashed $edward;
+    padding-bottom: 25px;
+  }
+
+  &__lg {
+    margin-bottom: 25px;
+  }
+
+  @include clearfix();
+}
+
+.article--img {
+  float: left;
+  margin-right: 10px;
+}
+
+.article--img__lg {
+  margin-right: 20px;
 }
 
 .article--excerpt {
   font-size: 13px;
   line-height: 1.5;
-  margin: 0 auto 0 10px;
+  margin: 0;
+}
+
+.article--excerpt__lg {
+  font-size: 15px;
 }
 
 .article--headline {
   font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article--headline__bold {
+  font-weight: bold;
+}
+
+.article--headline__italic {
   font-style: italic;
 }
 
+.article--headline__lg {
+  font-size: 17px;
+}
+
 .article--date {
-  font-size: 13px;
   font-style: italic;
+}
+
+.article--date__lg {
+  font-size: 15px;
+  margin-bottom: 18px;
 }
 
 .articles--headline {

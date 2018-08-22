@@ -1,0 +1,32 @@
+.pagination--list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination--item {
+  align-items: center;
+  background-color: $sapling;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  margin-left: 15px;
+  text-align: center;
+  width: 35px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    background-color: $aths-special;
+    cursor: pointer;
+  }
+
+  &__active {
+    background-color: $vida-loca;
+  }
+}
+
+.pagination--link {
+  color: $heavy-metal;
+}
