@@ -37,10 +37,20 @@
   font-size: 13px;
   line-height: 1.5;
   margin: 0;
+  overflow: hidden;
+}
+
+.article--excerpt__sm {
+  font-size: 11px;
+  @include text-crop();
 }
 
 .article--excerpt__lg {
   font-size: 15px;
+}
+
+.article--excerpt__italic {
+  font-style: italic;
 }
 
 .article--headline {
@@ -62,6 +72,7 @@
 }
 
 .article--date {
+  font-size: 13px;
   font-style: italic;
 }
 
