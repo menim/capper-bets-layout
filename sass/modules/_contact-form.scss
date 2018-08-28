@@ -41,12 +41,48 @@
   margin-top: 10px;
 }
 
+.contact-form--label__checkbox {
+  cursor: pointer;
+  display: block;
+  padding-left: 38px;
+  position: relative;
+
+  &::before {
+    background-image: url('../images/checkbox.jpg');
+    content: '';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+  }
+}
+
+.contact-form--checkbox {
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.contact-form--checkbox:checked + .contact-form--label__checkbox {
+  &::after {
+    background-image: url('../images/checkbox-checked.png');
+    content: '';
+    display: block;
+    height: 16px;
+    left: 1px;
+    position: absolute;
+    top: 2px;
+    width: 18px;
+  }
+}
+
 .contact-form--btn {
   background-color: $vida-loca;
   border: 0;
   border-radius: 4px;
   box-shadow: 1px 2px 1px 0 $black-op-5;
   color: $white;
+  cursor: pointer;
   font-size: 15px;
   height: 40px;
   width: 140px;
@@ -54,5 +90,10 @@
   &:hover {
     box-shadow: none;
   }
+}
+
+.contact-form--link {
+  color: $heavy-metal;
+  font-size: 13px;
 }
 
