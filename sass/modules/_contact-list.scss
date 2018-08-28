@@ -1,0 +1,38 @@
+.contact-list {
+  color: $heavy-metal;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-list--item {
+  padding-left: 36px;
+  position: relative;
+
+  &::before {
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 50%;
+  }
+
+  &__telephone::before {
+    background-image: url('../images/telephone-icon.png');
+    height: 16px;
+    margin-top: -8px;
+    width: 16px;
+  }
+
+  &__location::before {
+    background-image: url('../images/location-icon.png');
+    height: 16px;
+    margin-top: -8px;
+    width: 11px;
+  }
+
+  &__email::before {
+    background-image: url('../images/mail-icon.png');
+    height: 13px;
+    margin-top: -7px;
+    width: 18px;
+  }
+}
