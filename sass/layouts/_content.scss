@@ -12,6 +12,10 @@
 
 #content .l-offset-lg-bottom {
   margin-bottom: 280px;
+
+  @include respond-below(md) {
+    margin-bottom: 100px;
+  }
 }
 
 #content .l-offset-sm-left {
@@ -19,7 +23,7 @@
 }
 
 #content .l-offset-left {
-  margin-left: 46px;
+  margin-left: 5.76%;
 }
 
 

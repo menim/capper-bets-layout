@@ -2,8 +2,14 @@
   margin: 0 auto;
   max-width: 1060px;
   min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 80px;
   position: relative;
+
+  @include respond-below(md) {
+    padding-top: 60px;
+  }
 }
 
 .l-flex {

@@ -3,6 +3,10 @@
   height: 233px;
   margin-top: 100px;
 
+  @include respond-below(md) {
+    margin-top: 80px;
+  }
+
   .l-offset-bottom {
     margin-bottom: 44px;
   }

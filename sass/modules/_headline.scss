@@ -10,6 +10,10 @@
 
 .headline--primary {
   font-size: 25px;
+
+  @include respond-below(md) {
+    font-size: 20px;
+  }
 }
 
 .headline--secondary {

@@ -2,10 +2,13 @@
   flex: 0 1 auto;
 }
 
-#aside .l-offset-bottom {
-  marin-bottom: 50px;
-}
-
 #aside .l-offset-sm-bottom {
   margin-bottom: 10px;
+}
+
+
+#aside .article--img {
+  @include respond-below(md) {
+    float: none;
+  }
 }

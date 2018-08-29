@@ -1,9 +1,17 @@
 #main .l-offset-bottom {
   margin-bottom: 50px;
+
+  @include respond-below(md) {
+    margin-bottom: 30px;
+  }
 }
 
 #main .l-offset-top {
   margin-top: 87px;
+
+  @include respond-below(md) {
+    margin-top: 67px;
+  }
 }
 
 #main .l-full-width {
