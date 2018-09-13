@@ -1,5 +1,11 @@
 .menu {
   height: 70px;
+
+  @include respond-below(sm) {
+    box-shadow: inset -15px 0 15px -9px  $black-op-5;
+    margin-right: 25px;
+    overflow-x: scroll;
+  }
 }
 
 .menu--item {

@@ -24,6 +24,10 @@
   flex-wrap: wrap;
 }
 
+.l-no-shrink {
+  flex-shrink: 0;
+}
+
 .l-gorizontal-end {
   justify-content: flex-end;
 }

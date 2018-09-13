@@ -126,7 +126,6 @@ $breakpoints: (
     @media (min-width: $breakpoint-value) {
       @content;
     }
-  
   // If the breakpoint doesn't exist in the map.
   } @else {
 
