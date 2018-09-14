@@ -1,0 +1,9 @@
+.logo {
+  height: 141px;
+  width: 356px;
+
+  @include respond-below(sm) {
+    height: 70px;
+    width: 178px;
+  }
+}
