@@ -1,5 +1,9 @@
 .social-nav {
   display: flex;
+
+  @include respond-below(sm) {
+    justify-content: center;
+  }
 }
 
 .social-nav--item {

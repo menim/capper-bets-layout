@@ -7,6 +7,13 @@
     margin-top: 80px;
   }
 
+  >div {
+    @include respond-below(sm) {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+  }
+
   .l-offset-bottom {
     margin-bottom: 44px;
   }
