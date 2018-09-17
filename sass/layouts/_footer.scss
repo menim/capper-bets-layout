@@ -7,6 +7,10 @@
     margin-top: 80px;
   }
 
+  @include respond-below(xs) {
+    height: auto;
+  }
+
   >div {
     @include respond-below(sm) {
       align-items: center;

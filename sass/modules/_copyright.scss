@@ -6,4 +6,8 @@
   @include respond-below(sm) {
     margin-top: 36px;
   }
+
+  @include respond-below(xs) {
+    margin-bottom: 12px;
+  }
 }

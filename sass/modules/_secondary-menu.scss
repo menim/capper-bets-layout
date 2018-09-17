@@ -2,11 +2,23 @@
   display: inline-block;
   font-size: 12px;
   text-transform: uppercase;
+
+  @include respond-below(xs) {
+    display: block;
+  }
 }
 
 .secondary-menu--item {
   color: $sapling;
   margin-left: 27px;
+
+  @include respond-below(xs) {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
 
   &:first-child {
     margin-left: 0;
