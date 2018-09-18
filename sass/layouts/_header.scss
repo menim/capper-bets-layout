@@ -10,4 +10,15 @@
   .l-negative-offset {
     margin-left: -24px;
   }
+
+  .l-wrapper {
+    >.l-flex {
+      &:first-child {
+        @include respond-below(xs) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
+
