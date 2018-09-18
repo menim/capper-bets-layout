@@ -5,7 +5,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,15 +31,78 @@ li {
   padding: 0;
 }
 
+img {
+  vertical-align: middle;
+}
+
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+caption {
+  @include respond-below(xs) {
+    display: block;
+  }
+}
+
+thead,
+tbody {
+  @include respond-below(xs) {
+    margin-top: 1em;
+  }
+}
+
+tbody {
+  @include respond-below(xs) {
+    margin-left: 2em;
+  }
+}
+
 caption {
   text-align: left;
+
+  @include respond-below(xs) {
+    width: 100%;
+  }
+}
+
+table {
+
+  @include respond-below(xs) {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  strong {
+    @include respond-below(xs) {
+      font-weight: 400;
+    }
+  }
 }
 
 th {
   color: $xanadu;
   font: italic 13px arimo, sans-serif;
+  
+  @include respond-below(xs) {
+    font-size: 16px;
+  }
 }
 
 td {
   text-align: center;
+}
+
+thead {
+  @include respond-below(xs) {
+    text-shadow: 0 11.1538em,
+      0 calc(11.1538em * 2),
+      0 calc(11.1538em * 3),
+      0 calc(11.1538em * 4),
+      0 calc(11.1538em * 5),
+      0 calc(11.1538em * 6);
+  }
 }

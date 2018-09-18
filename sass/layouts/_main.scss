@@ -18,6 +18,10 @@
   @include respond-below(md) {
     margin-top: 67px;
   }
+
+  @include respond-below(xs) {
+    margin-top: 37px;
+  }
 }
 
 #main .l-full-width {
