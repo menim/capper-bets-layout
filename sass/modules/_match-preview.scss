@@ -4,9 +4,17 @@
 
 .match-preview--command {
   align-self: center;
+
+  @include respond-below(xs) {
+    height: 100px;
+  }
 }
 
 .match-preview--description {
   margin: 0 48px;
   text-align: center;
+
+  @include respond-below(xs) {
+    margin: 0 12px;
+  }
 }
