@@ -10,6 +10,10 @@
     border: 0;
     margin-bottom: 61px;
     padding-bottom: 0;
+
+    @include respond-below(xs) {
+      margin-bottom: 40px;
+    }
   }
 
   &__with-border {

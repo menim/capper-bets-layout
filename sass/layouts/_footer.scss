@@ -9,6 +9,7 @@
 
   @include respond-below(xs) {
     height: auto;
+    margin-top: 40px;
   }
 
   >div {
