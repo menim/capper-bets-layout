@@ -8,6 +8,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @include respond-below(sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .calendar--list {
@@ -15,12 +20,25 @@
   display: flex;
   max-width: 415px;
   overflow: hidden;
+
+  @include respond-below(sm) {
+    max-width: 315px;
+  }
+
+  @include respond-below(xs) {
+    max-width: 215px;
+  }
 }
 
 .calendar--item {
   border-left: 1px solid $edward;
   padding-left: 30px;
   padding-right: 30px;
+
+  @include respond-below(sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &:last-child {
     border-right: 1px solid $edward;

@@ -24,6 +24,10 @@
 
 #content .l-offset-left {
   margin-left: 5.76%;
+
+  @include respond-below(sm) {
+    margin-left: 0;
+  }
 }
 
 
