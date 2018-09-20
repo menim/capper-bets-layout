@@ -24,11 +24,23 @@
   height: 200px;
   padding-top: 21px;
   width: 480px;
+
+  @include respond-below(sm) {
+    width: 380px;
+  }
+
+  @include respond-below(xs) {
+    width: 100%;
+  }
 }
 
 .contact-form--input__md {
   height: 38px;
   width: 298px;
+
+  @include respond-below(xs) {
+    width: 100%;
+  }
 }
 
 .contact-form--input__sm {
