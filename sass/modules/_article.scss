@@ -35,6 +35,16 @@
 
 .article--img__lg {
   margin-right: 20px;
+
+  @include respond-below(sm) {
+    width: 200px;
+    height: 120px;
+  }
+
+  @include respond-below(xs) {
+    float: none;
+    margin-bottom: 10px;
+  }
 }
 
 .article--excerpt {
