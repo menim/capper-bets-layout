@@ -36,6 +36,7 @@
   padding-right: 30px;
 
   @include respond-below(sm) {
+    flex: 1 0 auto;
     padding-left: 15px;
     padding-right: 15px;
   }
