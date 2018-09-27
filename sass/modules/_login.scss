@@ -2,10 +2,7 @@
   align-self: center;
   color: $sapling;
   font-size: 14px;
-
-  @include respond-below(sm) {
-    flex-shrink: 0;
-  }
+  flex: 0 1 auto;
 }
 
 .login-nav {
