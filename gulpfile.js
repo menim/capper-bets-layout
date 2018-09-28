@@ -73,7 +73,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('html', function() {
-   return gulp.src('index.html').pipe(gulp.dest('dist'))
+   return gulp.src(['index.html', 'statistics.html','article.html','articles.html','autherization.html', 'forecast.html']).pipe(gulp.dest('dist'))
 })
 
 gulp.task('uglify', function(){

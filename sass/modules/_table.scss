@@ -1,28 +1,13 @@
 .table {
   color: $heavy-metal;
-  font-size: 13px;
-  width: 100%;
-
-  @include respond-below(xs) {
-    font-size: 16px;
-  }
 }
 
 .table--last {
   margin-bottom: 80px;
-
-  @include respond-below(xs) {
-    margin-bottom: 40px;
-  }
 }
 
 .table--row {
   height: 50px;
-
-  @include respond-below(xs) {
-    height: auto;
-    margin-top: 2em;
-  }
 
   &:first-child {
     margin-top: 0;
@@ -30,5 +15,22 @@
 
   &:nth-child(even) {
     background-color: $ercu-white;
+  }
+}
+
+@include respond-below(sm) {
+  .table {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .responsive-table {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  td {
+    min-width: 100px;
+    text-align: center;
   }
 }
