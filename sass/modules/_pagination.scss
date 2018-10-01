@@ -21,10 +21,10 @@
     background-color: $aths-special;
     cursor: pointer;
   }
+}
 
-  &__active {
-    background-color: $vida-loca;
-  }
+.pagination--item__active {
+  background-color: $vida-loca;
 }
 
 .pagination--link {

@@ -14,22 +14,28 @@
     position: absolute;
     top: 50%;
   }
+}
 
-  &__telephone::before {
+.contact-list--item__telephone {
+  &::before {
     background-image: url('../images/telephone-icon.png');
     height: 16px;
     margin-top: -8px;
     width: 16px;
   }
+}
 
-  &__location::before {
+.contact-list--item__location {
+  &::before {
     background-image: url('../images/location-icon.png');
     height: 16px;
     margin-top: -8px;
     width: 11px;
   }
+}
 
-  &__email::before {
+.contact-list--item__email {
+  &::before {
     background-image: url('../images/mail-icon.png');
     height: 13px;
     margin-top: -7px;
